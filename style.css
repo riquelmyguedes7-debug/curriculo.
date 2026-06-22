@@ -1,0 +1,99 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, lightgray, white); /* #dfe9f3 -> lightgray, #ffffff -> white */
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: darkslategray; /* #333 -> darkslategray */
+}
+
+/* Foto */
+.foto img {
+    width: 160px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid green; /* #4CAF50 -> green */
+    transition: 0.5s;
+}
+
+/* Efeito na foto */
+.foto img:hover {
+    transform: scale(1.08);
+}
+
+/* Seções (cards) */
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+
+    /* sombra leve */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    /* animação suave */
+    transition: all 0.6s ease;
+}
+
+/* Efeito elegante ao passar o mouse */
+section:hover {
+    background: linear-gradient(135deg, green, darkgreen); /* #4CAF50 -> green, #2e7d32 -> darkgreen */
+    color: white;
+
+    transform: translateY(-8px) scale(1.03);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Títulos */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Lista */
+ul {
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: green; /* #4CAF50 -> green */
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+/* Hover no link */
+a:hover {
+    color: white;
+    background-color: darkgreen; /* #2e7d32 -> darkgreen */
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+/* Clique no link */
+a:active {
+    transform: scale(0.95);
+}
